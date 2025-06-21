@@ -1,5 +1,13 @@
 {
     "name": "Fullstack Python & React Dev Environment",
     "image": "mcr.microsoft.com/devcontainers/universal:latest",
+    "features": {
+        "ghcr.io/devcontainers/features/python:1": {
+            "version": "3.9"
+        },
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "22"
+        }
+    },
     "workspaceFolder": "/workspaces/cards-game-engine-fullstack-dev-env"
 }
