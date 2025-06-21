@@ -22,5 +22,24 @@
             ]
         }
     },
+    "postCreateCommand": {
+        "clone_backend": "git clone --branch dev https://github.com/groths89/cards-game-engine.git backend",
+        "clone_frontend": "git clone --branch dev https://github.com/groths89/cards-game-engine-web.git frontend",
+        "install_python_deps": "pip install -r ./backend/requirements.txt",
+        "install_node_deps": "npm install --prefix ./frontend"
+    },
+    "portsAttributes": {
+        "3000": {
+            "label": "Frontend (React)",
+            "onAutoForward": "notify"
+        },
+        "8080":{
+            "label": "Backend (Python)",
+            "onAutoForward": "notify"
+        }
+    },
+    "containerEnv": {
+        "PYTHONUNBUFFERED": "1"
+    },
     "workspaceFolder": "/workspaces/cards-game-engine-fullstack-dev-env"
 }
