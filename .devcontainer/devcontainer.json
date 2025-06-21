@@ -9,5 +9,18 @@
             "version": "22"
         }
     },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode",
+                "ms-vscode.vscode-typescript-next",
+                "formulahendry.auto-rename-tag",
+                "humao.rest-client",
+                "streetsidesoftware.code-spell-checker"
+            ]
+        }
+    },
     "workspaceFolder": "/workspaces/cards-game-engine-fullstack-dev-env"
 }
